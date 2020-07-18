@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>queryResule</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="../static/css/reset.css" rel="stylesheet">
+    <!-- Bootstrap3.3.5 CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/queryResult.css" rel="stylesheet">
+  </head>
+  <body>
+  <div class="container">
+      <div class="queryResule">
+          <h2>学历验证结果</h2>
+            <div id="tableDiv">
+                <table id="table" style="margin: 0 auto;">
+                    <tr>
+                        <td>学历地址</td>
+                        <td>区块链交易ID</td>
+                        <td>学历有效性</td>
+
+                    </tr>
+                        <tr>
+                            <td>{{.DiplomaAddr}}</td>
+                            <td>{{.TransactionID}}</td>
+                            <td>{{.IsDiploma}}</td>
+
+                        </tr>
+                </table>
+            </div>
+          <div class="top">
+              <div class="left">
+                  <p>
+                      <span>学历地址：</span>
+                      <span>{{.DiplomaAddr}}</span>
+                  </p>
+                  <p>
+                      <span>区块链交易ID：</span>
+                      <span>{{.TransactionID}}</span>
+                  </p>
+                  <p>
+                    <span>签名学校地址：</span>
+                    <span>{{.SchoolAddr}}</span>
+                </p>
+                <p>
+                    <span>签名学校名：</span>
+                    <span>{{.SchoolName}}</span>
+                </p>
+                <p>
+                    <span>签名学校公钥：</span>
+                    <span>{{.PublicKey}}</span>
+                </p>
+                <p>
+                    <span>被签名学生地址：</span>
+                    <span>{{.StudentAddr}}</span>
+                </p>
+                <p>
+                    <span>签名值：</span>
+                    <span>{{.Sinature}}</span>
+                </p>
+                <p>
+                    <span>学历有效性</span>
+                    <span>{{.IsDiploma}}</span>
+                </p>
+
+              </div>
+              <div class="right">
+                 
+              </div>
+              <div>
+              </div>
+          </div>
+          <p>
+              <a href="/index">返回首页</a>
+          </p>
+          <div class="bottom">
+              <p><b>声明</b></p>
+              <p>1、未经学历信息权属人同息,不得将本材科用于违背权属人意愿之用速,学历信息内容标注“*”号,表示该内容不详,学历信息如有修改,请以网站在线查询内容为准则。</p>
+              <p>
+                  2.学历证书查询结果仅供查询人使用,不具有再验证功能,如
+                  需向第三方提供学历信息,建议使用具有检证功能的学历证书电子注册备案表。
+              </p>
+          </div>
+      </div>
+  </div>
+  </body>
+</html>
